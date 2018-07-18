@@ -1,10 +1,12 @@
 package at.aau;
 
-import java.io.DataInputStream;
+import sun.awt.SunToolkit;
 
 public class aufgabe_eins {
 
-     public static void main(String[] args) {
+    private static final Object Graphics2D = 0;
+
+    public static void main(String[] args) {
 
         System.out.println("-------------------------------------------------------------------------------1.");
 //---------------------------------------------------------------------------------------1.
@@ -152,6 +154,21 @@ public class aufgabe_eins {
 //---------------------------------------------------------------------------------------13.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         System.out.println("-------------------------------------------------------------------------------14.");
 //---------------------------------------------------------------------------------------14.
 
@@ -200,7 +217,7 @@ public class aufgabe_eins {
 //---------------------------------------------------------------------------------------16.
             double a11 = 3.22;
             double b11 = 2.22;
-            double c11 = 3.911;
+            double c11 = 4;
 
             double a22 = Math.pow(a11,2);
             double b22 = Math.pow(b11,2);
@@ -222,11 +239,32 @@ public class aufgabe_eins {
             } else if (c11<=0) {
                 System.out.println ("Fehler!");
             } else
-                System.out.println("Geht nicht!");
+                System.out.println("Das funktioniert nicht, aber warum?!");
 
 
         System.out.println("-------------------------------------------------------------------------------17.");
 //---------------------------------------------------------------------------------------17.
+
+
+
+
+//- - - - - - - - -A-u-f-g-a-b-e- -2-
+
+
+
+
+//                for(int n = 1;n<=10; n++)
+//                System.out.println(n);
+
+//
+//                int n2 = 2;
+//
+//                for(int a23 = 1;a23<=(a23+n2); a23++)
+//                System.out.println(a23);
+
+
+
+
 
 
 

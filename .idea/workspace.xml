@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a8b9ebe-9c69-4808-b90b-f2de10f38229" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/aau/aufgabe_eins.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/at/aau/aufgabe_eins$In.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/at/aau/aufgabe_eins.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/aau/Uebungsblatt1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/aau/Uebungsblatt2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/aau/Uebungsblatt2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/aau/aufgabe_eins.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/aau/aufgabe_eins.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/aau/aufgabe_eins$In.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/aau/aufgabe_eins.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/aau/aufgabe_eins.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,8 +19,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/test$Uebungsblatt2.ic" NAME="Uebungsblatt2 Coverage Results" MODIFIED="1531898363149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>at.aau.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -32,11 +35,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aufgabe_eins.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aufgabe_eins.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/aufgabe_eins.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
+            <state relative-caret-position="460">
+              <caret line="257" lean-forward="true" selection-start-line="257" selection-end-line="257" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Uebungsblatt1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/Uebungsblatt1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="250" column="9" selection-start-line="250" selection-start-column="9" selection-end-line="250" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Uebungsblatt2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/Uebungsblatt2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="100" column="78" selection-start-line="100" selection-start-column="78" selection-end-line="100" selection-end-column="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4745#4754#0" expanded="true" />
+                <element signature="e#6369#6378#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>double</find>
       <find>b4</find>
       <find>c1</find>
       <find>a</find>
@@ -60,13 +85,36 @@
       <find>c3</find>
       <find>c4</find>
       <find>x4</find>
+      <find>z22</find>
+      <find>arr</find>
+      <find>double</find>
+      <find>myList</find>
+      <find>nums</find>
+      <find>arrOne</find>
+      <find>queue2</find>
+      <find>mergeQ</find>
+      <find>list</find>
+      <find>int</find>
     </findStrings>
     <replaceStrings>
-      <replace>int</replace>
       <replace>b9</replace>
       <replace>b8</replace>
       <replace>c9</replace>
       <replace>steuer</replace>
+      <replace>z</replace>
+      <replace>numOfInputs</replace>
+      <replace>int</replace>
+      <replace>nArray</replace>
+      <replace>myList1</replace>
+      <replace>myList</replace>
+      <replace>arrThree</replace>
+      <replace>arrOne</replace>
+      <replace>arrTwo</replace>
+      <replace>arr</replace>
+      <replace>numbers</replace>
+      <replace>long</replace>
+      <replace>letters</replace>
+      <replace>charObjectArray</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -82,12 +130,14 @@
         <option value="$PROJECT_DIR$/src/main/java/at/aau/aufgabe_zwei.java" />
         <option value="$PROJECT_DIR$/src/main/java/at/aau/aufgabe_2.java" />
         <option value="$PROJECT_DIR$/src/main/java/at/aau/aufgabe_eins.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/aau/Uebungsblatt1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/at/aau/Uebungsblatt2.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="840" />
-    <option name="y" value="-15" />
+    <option name="x" value="266" />
+    <option name="y" value="-9" />
     <option name="width" value="974" />
     <option name="height" value="1177" />
   </component>
@@ -98,6 +148,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -135,12 +186,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyersDiff" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -157,7 +207,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Uebungsblatt2">
+    <configuration name="Uebungsblatt1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.aau.Uebungsblatt1" />
+      <module name="test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.aau.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Uebungsblatt2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.aau.Uebungsblatt2" />
+      <module name="test" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.aau.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -210,8 +282,15 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Application.aufgabe_eins" />
+      <item itemvalue="Application.Uebungsblatt1" />
+      <item itemvalue="Application.Uebungsblatt2" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Uebungsblatt2" />
+        <item itemvalue="Application.Uebungsblatt1" />
         <item itemvalue="Application.aufgabe_eins" />
       </list>
     </recent_temporary>
@@ -227,75 +306,99 @@
       <option name="presentableId" value="Default" />
       <updated>1531725489830</updated>
     </task>
+    <task id="LOCAL-00001" summary="test 1">
+      <created>1531747026904</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1531747026904</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test 1 und 2">
+      <created>1531835721421</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1531835721421</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1186" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1177" extended-state="0" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" sideWeight="0.43802083" weight="0.3267974" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5375" side_tool="true" visible="true" weight="0.33146593" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4625" visible="true" weight="0.33146593" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11875" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.7933194" weight="0.22693032" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.28392485" side_tool="true" visible="true" weight="0.19397363" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7160752" visible="true" weight="0.19397363" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32985386" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23799582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39962652" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.753125" weight="0.32492998" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test 1" />
+    <MESSAGE value="test 1 und 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="test 1 und 2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="30" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/Aufgabe_one.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/aufgabe_eins.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        <state relative-caret-position="4352">
+          <caret line="256" column="40" lean-forward="true" selection-start-line="255" selection-start-column="17" selection-end-line="256" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/aufgabe_zwei.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/Uebungsblatt1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="4165">
+          <caret line="245" column="31" lean-forward="true" selection-start-line="245" selection-start-column="31" selection-end-line="245" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/aufgabe_zwei.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/Uebungsblatt2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/aufgabe_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="4131">
+          <caret line="243" column="49" selection-start-line="243" selection-start-column="49" selection-end-line="243" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4745#4754#0" expanded="true" />
+            <element signature="e#6369#6378#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -308,8 +411,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/aufgabe_eins.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="225" lean-forward="true" selection-start-line="225" selection-end-line="225" />
+        <state relative-caret-position="3876">
+          <caret line="228" column="92" selection-start-line="228" selection-start-column="92" selection-end-line="228" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/Aufgabe_one.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/aufgabe_zwei.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/aufgabe_zwei.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/aufgabe_2.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-477">
+          <caret line="2211" column="37" lean-forward="true" selection-start-line="2211" selection-start-column="15" selection-end-line="2211" selection-end-column="37" />
+          <folding>
+            <element signature="e#84045#84046#0" expanded="true" />
+            <element signature="e#84089#84090#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/Uebungsblatt1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="250" column="9" selection-start-line="250" selection-start-column="9" selection-end-line="250" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/aufgabe_eins.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="257" lean-forward="true" selection-start-line="257" selection-end-line="257" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/at/aau/Uebungsblatt2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="100" column="78" selection-start-line="100" selection-start-column="78" selection-end-line="100" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4745#4754#0" expanded="true" />
+            <element signature="e#6369#6378#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
