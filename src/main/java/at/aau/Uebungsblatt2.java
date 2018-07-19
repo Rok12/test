@@ -1,6 +1,5 @@
 package at.aau;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Uebungsblatt2 {
@@ -70,7 +69,6 @@ public class Uebungsblatt2 {
             int in = sca.nextInt();
 
             int summe = 0;
-//            int i = 1;
 
 
             for(int h = 0; h<= in; h++)
@@ -89,20 +87,34 @@ public class Uebungsblatt2 {
 
 
             Scanner scanner = new Scanner(System.in);
-            long zahl = scanner.nextLong();
+            ArrayList<Integer> array = new ArrayList<Integer>();
+            System.out.print("Enter numbers\n");
+            System.out.println("(Click , or . to terminate)");
 
-            long zahl1 = zahl;
+            while(scanner.hasNextInt()){
+                array.add(scanner.nextInt());
+            }
 
-            for (int  i=1; i<=zahl1; i++) {
-                zahl1 = zahl1*i;
-                }
+//            int array1 = Integer.parseInt(array);
+            Integer [] array1 = array.toArray(new Integer[0]);
+            double mittelwert = 0;
+            double summe = 0;
 
 
-            System.out.println ("Die Fakultaet von " + zahl + " ist: " + zahl1);
+            for ( int i= 0; i<array1.length; i++){
+                summe = summe + array1.length;
+                summe++;
+            }
+
+            mittelwert = summe / array.size();
+
+
+            System.out.println("Summe: " + summe);
+            System.out.println("Mittelwert: " + mittelwert);
+
+
+
         }
-
-
-
         private static void aufgabeFuenf() {
             System.out.println("Aufgabe Fuenf ausgewählt.");
 
@@ -115,10 +127,19 @@ public class Uebungsblatt2 {
         private static void aufgabeSechs() {
             System.out.println("Aufgabe Sechs ausgewählt.");
 
-            int Zaehler = 50;
-            System.out.println( Zaehler + "\n" );
-            Zaehler = Zaehler++;
-            System.out.println( Zaehler +"\n ");
+
+
+            Scanner scanner = new Scanner(System.in);
+            long zahl = scanner.nextLong();
+
+            long zahl1 = 1;
+
+            for (int  i=1; i<=zahl; i++) {
+                zahl1 = zahl1 * i;
+            }
+
+
+            System.out.println ("Die Fakultaet von " + zahl + " ist: " + zahl1);
         }
 
         private static void aufgabeSieben() {
@@ -152,13 +173,35 @@ public class Uebungsblatt2 {
 
         private static void aufgabeAcht() {
             System.out.println("Aufgabe Acht ausgewählt.");
-            
+
+
+           Scanner scanner = new Scanner(System.in);
+           int nummer = scanner.nextInt();
+
+
+           for (int teiler=1; teiler <= nummer; ++teiler)
+                if (nummer%teiler == 0)
+                    System.out.println(teiler);
+
         }
 
         private static void aufgabeNeun() {
             System.out.println("Aufgabe Neun ausgewählt.");
 
+            Scanner scanner = new Scanner(System.in);
+            int fibonacci = scanner.nextInt();
 
+
+            int[] fib = new int[fibonacci];
+            fib[0] = 0;
+            fib[1] = 1;
+
+            for (int i = 2; i < fibonacci; i++) {
+                fib[i] = fib[i - 1] + fib[i - 2];
+            }
+            for (int i = 0; i < fibonacci; i++) {
+                System.out.print(fib[i] + " ");
+            }
         }
 
         private static void aufgabeZehn() {
@@ -216,43 +259,59 @@ public class Uebungsblatt2 {
             System.out.println("Aufgabe Zwolf ausgewählt.");
 
 
-            int x, count = 0;
-            int i = 0;
-
-            ArrayList<Integer> n = new ArrayList<Integer>();
+            ArrayList<Integer> nList = new ArrayList<Integer>();
 
             Scanner scanner = new Scanner(System.in);
 
-            while (scanner.hasNextDouble())
+            while (scanner.hasNextInt())
             {
                 int input = scanner.nextInt();
-                n.add(input);
+                nList.add(input);
             }
 
-//            int a[] = new int[n];
 
+            Integer [] nn = nList.toArray(new Integer[0]);
 
-//            System.out.println("Enter numbers:");
-//            for(i = 0; i < n; i++)
-//            {
-//                a[i] = s.nextInt();
-//            }
-//            System.out.print("Enter number to count:");
-//            x = scanner.nextInt();
-//            for(i = 0; i < n; i++)
-//            {
-//                if(n[i] == x)
-//                {
-//                    count++;
+            int eins = 0;
+            int zwei = 0;
+            int drei = 0;
+            int vier = 0;
+            int fuenf = 0;
+            int sechs = 0;
+            int sieben = 0;
+            int acht = 0;
+            int neun = 0;
+            int zehn = 0;
+
+            for (int i = 0; i < nn.length; i++) {
+
+//                 switch (Integer.valueOf(nn)) {
+//                    case 1: eins++;break;
+//                    case 2: zwei++;break;
+//                    case 3: drei++;break;
+//                    case 4: vier++;break;
+//                    case 5: fuenf++;break;
+//                    case 6: sechs++;break;
+//                    case 7: sieben++;break;
+//                    case 8: acht++;break;
+//                    case 9: neun++;break;
+//                    case 10: zehn++;break;
+//
+//                    default:
+//                        System.out.println("Keine gültige Aufgabe!");
 //                }
-//            }
-//            System.out.println(x+count);
-//
-//
+            }
 
-
-
-
+            System.out.println("1: " + eins);
+            System.out.println("2: " + zwei);
+            System.out.println("3: " + drei);
+            System.out.println("4: " + vier);
+            System.out.println("5: " + fuenf);
+            System.out.println("6: " + sechs);
+            System.out.println("7: " + sieben);
+            System.out.println("8: " + acht);
+            System.out.println("9: " + neun);
+            System.out.println("10: " + zehn);
 
         }
 
@@ -260,10 +319,8 @@ public class Uebungsblatt2 {
             System.out.println("Aufgabe Dreizehn ausgewählt.");
 
 
-
-
-
-
+            Scanner scanner = new Scanner(System.in);
+            Integer a = scanner.nextInt();
 
 
 
@@ -307,10 +364,6 @@ public class Uebungsblatt2 {
             int z = x*y;
 
             System.out.println(x + " Tage haben " + z + " Stunden.");
-
-
-//            int[] tage = {1,2,3,4,5,6,7,8,9,10};
-
 
         }
 
