@@ -34,7 +34,7 @@ public class Uebungsblatt1 {
     private static void aufgabeEins() {
         System.out.println("Aufgabe Eins ausgewählt.");
 
-        System.out.println("ESOP ist Super");
+        System.out.println("ESOP ist Super.");
 
     }
 
@@ -42,8 +42,7 @@ public class Uebungsblatt1 {
         System.out.println("Aufgabe Zwei ausgewählt.");
 
         int a = 5;
-        System.out.println("Nummer: " + a);
-
+        System.out.println("Nummer ist: " + a);
 
     }
 
@@ -104,7 +103,7 @@ public class Uebungsblatt1 {
 
         double z = xy + yx;
 
-        System.out.println(z);
+        System.out.println("Endwert: " + z);
 
     }
 
@@ -125,18 +124,18 @@ public class Uebungsblatt1 {
     private static void aufgabeSieben() {
         System.out.println("Aufgabe Sieben ausgewählt.");
 
-        Scanner sca = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         double x,y;
 
-        x = sca.nextDouble();
-        y = sca.nextDouble();
+        x = scanner.nextDouble();
+        y = scanner.nextDouble();
 
         double yx = 2 * x;
         double xy = Math.pow( y,2 );
 
         double z = xy + yx;
 
-        System.out.println(z);
+        System.out.println("Endwert: " + z);
 
 
     }
@@ -146,19 +145,23 @@ public class Uebungsblatt1 {
 
         double pi = Math.PI;
 
-        System.out.println (pi);
+        System.out.println ("Pi: " + pi);
 
     }
 
     private static void aufgabeNeun() {
         System.out.println("Aufgabe Neun ausgewählt.");
 
-        double k = 80;
-        double t = 7;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Kilometer:");
+        double k = scanner.nextDouble();
+        System.out.println("liter Verbraucht:");
+        double t = scanner.nextDouble();
 
         double kt = k*t/100;
 
-        System.out.println(kt);
+        System.out.println("Verbrauch ist: " + kt + " liter/100km.");
 
     }
 
@@ -191,14 +194,14 @@ public class Uebungsblatt1 {
 
         float a5 = 0;
         double b5 = 1.1;
-        double c5 = (double)b5 / (int)a5;
+        double c5 = b5 / (int)a5;
         System.out.println(c5);
 
         int a6 = 45;
         int b6 = a6;
         int c6 = Integer.MAX_VALUE+1;
         a6 = a6*a6;
-        b6 = ((b6*b6)/b6%b6);
+        b6 = (((b6*b6)/b6)%b6);
         System.out.println("a6="+a6+" b6="+b6+" c6="+c6);
 
     }
@@ -224,11 +227,12 @@ public class Uebungsblatt1 {
 
     }
 
+    
     private static void aufgabeZwolf() {
         System.out.println("Aufgabe Zwolf ausgewählt.");
 
-        Scanner sca = new Scanner(System.in);
-        int jahr1 = sca.nextInt();
+        Scanner scanner = new Scanner(System.in);
+        int jahr1 = scanner.nextInt();
         int jahr = jahr1;
         if(jahr%4 == 0 && (jahr%100 != 0 || jahr%400 == 0))
         {
@@ -242,62 +246,58 @@ public class Uebungsblatt1 {
     private static void aufgabeDreizehn() {
         System.out.println("Aufgabe Dreizehn ausgewählt.");
 
-        Scanner sca = new Scanner(System.in);
-        int in = sca.nextInt();
-        int anzhundert = 0;
+        Scanner scanner = new Scanner(System.in);
+        int in = scanner.nextInt();
+        int anzHundert = 0;
         while (in >=100){
-            anzhundert++;
+            anzHundert++;
             in = in-100;
         }
-        int anzfuenfzig = 0;
+        int anzFuenfzig = 0;
         while (in >=50){
-            anzfuenfzig++;
+            anzFuenfzig++;
             in = in-50;
         }
-        int anzzwanzig = 0;
+        int anzZwanzig = 0;
         while (in >=20){
-            anzzwanzig++;
+            anzZwanzig++;
             in = in-20;
         }
-        int anzzehn = 0;
+        int anzZehn = 0;
         while (in >=10){
-            anzzehn++;
+            anzZehn++;
             in = in-10;
         }
-        int anzfuenf = 0;
+        int anzFuenf = 0;
         while (in >=5){
-            anzfuenf++;
+            anzFuenf++;
             in = in-5;
         }
-        System.out.println("100: " + anzhundert);
-        System.out.println("50: " + anzfuenfzig);
-        System.out.println("20: " + anzzwanzig);
-        System.out.println("10: " + anzzehn);
-        System.out.println("5: " + anzfuenf);
+        System.out.println("100: " + anzHundert);
+        System.out.println("50: " + anzFuenfzig);
+        System.out.println("20: " + anzZwanzig);
+        System.out.println("10: " + anzZehn);
+        System.out.println("5: " + anzFuenf);
         System.out.println("Restwert: " + in);
     }
 
     private static void aufgabeVierzehn() {
         System.out.println("Aufgabe Vierzehn ausgewählt.");
 
-        Scanner sca = new Scanner(System.in);
-        int month = sca.nextInt();
+        Scanner scanner = new Scanner(System.in);
+
+        int month = scanner.nextInt();
         String Wochentag;
+
+
         switch (month) {
-            case 1:  Wochentag = "Montag";
-                break;
-            case 2:  Wochentag = "Dienstag";
-                break;
-            case 3:  Wochentag = "Mittwoch";
-                break;
-            case 4:  Wochentag = "Doenerstag";
-                break;
-            case 5:  Wochentag = "Freitag";
-                break;
-            case 6:  Wochentag = "Samstag";
-                break;
-            case 7:  Wochentag = "Sonntag";
-                break;
+            case 1:  Wochentag = "Montag";break;
+            case 2:  Wochentag = "Dienstag";break;
+            case 3:  Wochentag = "Mittwoch";break;
+            case 4:  Wochentag = "Doenerstag";break;
+            case 5:  Wochentag = "Freitag";break;
+            case 6:  Wochentag = "Samstag";break;
+            case 7:  Wochentag = "Sonntag";break;
             default: Wochentag = "Hier gibts ein Fehler";
         }
         System.out.println(Wochentag);
@@ -328,34 +328,105 @@ public class Uebungsblatt1 {
     private static void aufgabeSechszehn() {
         System.out.println("Aufgabe Sechszehn ausgewählt.");
 
-        double a = 3.22;
-        double b = 2.22;
-        double c = 4;
+        Scanner scanner = new Scanner(System.in);
 
-//        double a1 = Math.pow(a,2);
-//        double b1 = Math.pow(b,2);
-//        double c1 = Math.pow(c,2);
+        double a = scanner.nextDouble();
+        double b = scanner.nextDouble();
+
+
+        double a1 = Math.pow(a,2);
+        double b1 = Math.pow(b,2);
+
+
+
+        double c1 = a1 + b1;
+        double c = Math.sqrt(c1);
+
 
        if (a==b&&b==c) {
-            System.out.println ("Gleichseitig Dreiceck");
+           System.out.println ("Gleichseitig Dreiceck");
+           System.out.println("A: " + a);
+           System.out.println("B: " + b);
+           System.out.println("C: " + c);
         } else if ((a==b||a==c||b==c)) {
-            System.out.println ("Gleichschenkelig Dreieck");
-        } else if (Math.pow(a,2) + Math.pow(b,2) == Math.pow(c,2)) {
-            System.out.println("Rechtwinklig Dreieck");
+           System.out.println ("Gleichschenkelig Dreieck");
+           System.out.println("A: " + a);
+           System.out.println("B: " + b);
+           System.out.println("C: " + c);
+        } else if ((a1 + b1) == c1) {
+           System.out.println("Rechtwinklig Dreieck");
+           System.out.println("A: " + a);
+           System.out.println("B: " + b);
+           System.out.println("C: " + c);
         } else if (a<=0) {
-            System.out.println ("Fehler!");
+           System.out.println ("Fehler!");
         } else if (b<=0) {
-            System.out.println ("Fehler!");
+           System.out.println ("Fehler!");
         } else if (c<=0) {
-            System.out.println ("Fehler!");
+           System.out.println ("Fehler!");
         } else
-            System.out.println("Das funktioniert nicht, aber warum?!");
+           System.out.println("Das funktioniert nicht.");
 
     }
 
     private static void aufgabeSiebzehn() {
         System.out.println("Aufgabe Siebzehn ausgewählt.");
 
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Kreis-koordinaten:");
+        double cx = scanner.nextDouble();
+        double cy = scanner.nextDouble();
+        System.out.println("Radius:");
+        double r = scanner.nextDouble();
+
+        System.out.println("Punkt:");
+        double px = scanner.nextDouble();
+        double py = scanner.nextDouble();
+
+        double insert = Math.pow(px-cx,2) / Math.pow(r,2) + Math.pow(py-cy,2) / Math.pow(r,2);
+
+        if (insert < 1){
+            System.out.println("Innerhalb");
+        }else if (insert == 1){
+            System.out.println("auf dem Kreis");
+        }else{
+            System.out.println("ausserhalb");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//        int xKoordinate = 4;
+//        int xKoordinateMinus = -4;
+//        int yKoordinate = 4;
+//        int yKoordinateMinus = -4;
+//
+//
+//        double r = 2;
+//
+//        double c = 2* Math.PI *r;
+//
+//
+//            if (x < xKoordinate && y < yKoordinate && x > xKoordinateMinus && x > yKoordinateMinus){
+//                System.out.println("Punkt ist in der Kreis");
+//            }
+//            else if (x)
 
 
     }

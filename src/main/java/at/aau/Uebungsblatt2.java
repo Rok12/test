@@ -48,13 +48,10 @@ public class Uebungsblatt2 {
         private static void aufgabeZwei() {
             System.out.println("Aufgabe Zwei ausgewählt.");
 
-            Scanner sca = new Scanner(System.in);
-            int a,n;
+            Scanner scanner = new Scanner(System.in);
 
-            a = sca.nextInt();
-            n = sca.nextInt();
-
-
+            int a = scanner.nextInt();
+            int n = scanner.nextInt();
 
             for(int a1=a;a1 <= (a+n); a1++)
                 System.out.println(a1);
@@ -65,19 +62,18 @@ public class Uebungsblatt2 {
             System.out.println("Aufgabe Drei ausgewählt.");
 
 
-            Scanner sca = new Scanner(System.in);
-            int in = sca.nextInt();
+            Scanner scanner = new Scanner(System.in);
+            int in = scanner.nextInt();
 
             int summe = 0;
 
-
             for(int h = 0; h<= in; h++)
-            while (h%2 == 1) {
+                if (h%2 == 1) {
                 summe = summe + h;
                 h++;
 
             }
-            System.out.println("Summe = " + summe);
+            System.out.println("Summe der ungeraden Zahlen = " + summe);
 
         }
 
@@ -87,27 +83,24 @@ public class Uebungsblatt2 {
 
 
             Scanner scanner = new Scanner(System.in);
-            ArrayList<Integer> array = new ArrayList<Integer>();
-            System.out.print("Enter numbers\n");
-            System.out.println("(Click , or . to terminate)");
+            System.out.println("Enter numbers");
 
-            while(scanner.hasNextInt()){
-                array.add(scanner.nextInt());
-            }
 
-//            int array1 = Integer.parseInt(array);
-            Integer [] array1 = array.toArray(new Integer[0]);
             double mittelwert = 0;
             double summe = 0;
+            int number = 0;
+            int sizeArray = 0;
+            int i = 0;
 
+            do { number = scanner.nextInt();
+                sizeArray++;
+                if (i<number){
+                    summe = summe + number;
+                    number++;
+                }
+            }while( number != 0 );
 
-            for ( int i= 0; i<array1.length; i++){
-                summe = summe + array1.length;
-                summe++;
-            }
-
-            mittelwert = summe / array.size();
-
+            mittelwert = summe / (sizeArray -1);
 
             System.out.println("Summe: " + summe);
             System.out.println("Mittelwert: " + mittelwert);
@@ -153,8 +146,6 @@ public class Uebungsblatt2 {
 
             do {
                 number = scanner.nextInt();
-                System.out.print("value of x: " + number );
-                System.out.print("\n");
                 numOfInputs++;
                 if (number > maxValue) {
                     secMaxValue = maxValue;
@@ -208,13 +199,13 @@ public class Uebungsblatt2 {
             System.out.println("Aufgabe Zehn ausgewählt.");
 
 
-            Scanner scan = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             ArrayList<Integer> list = new ArrayList<Integer>();
-            System.out.print("Enter numbers\n");
+            System.out.println("Enter numbers");
             System.out.println("(Click , or . to terminate)");
 
-            while(scan.hasNextInt()){
-                list.add(scan.nextInt());
+            while(scanner.hasNextInt()){
+                list.add(scanner.nextInt());
             }
 
             Integer [] numbers = list.toArray(new Integer[0]);
@@ -235,13 +226,11 @@ public class Uebungsblatt2 {
             int arrThree[] = new int[arrOne.length + arrTwo.length];
 
 
-            int arrOnePointer = 0, arrTwoPointer = 0;
+            int arrOnePointer = 0;
+            int arrTwoPointer = 0;
 
-            for (int i =0; i<arrThree.length; i++){
-
-
-
-                if( arrTwoPointer>= arrTwo.length || (arrOnePointer < arrOne.length && (arrOne[arrOnePointer]<arrTwo[arrTwoPointer]))){
+            for (int i = 0; i<arrThree.length; i++){
+                if( arrTwoPointer >= arrTwo.length || (arrOnePointer < arrOne.length && (arrOne[arrOnePointer]<arrTwo[arrTwoPointer]))){
                     arrThree[i] = arrOne[arrOnePointer];
                     arrOnePointer++;
                 }
@@ -258,19 +247,12 @@ public class Uebungsblatt2 {
         private static void aufgabeZwolf() {
             System.out.println("Aufgabe Zwolf ausgewählt.");
 
-
-            ArrayList<Integer> nList = new ArrayList<Integer>();
-
             Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter numbers:");
+            System.out.println("With 0 terminate:");
 
-            while (scanner.hasNextInt())
-            {
-                int input = scanner.nextInt();
-                nList.add(input);
-            }
-
-
-            Integer [] nn = nList.toArray(new Integer[0]);
+            int numbers = 0;
+            int i = 0;
 
             int eins = 0;
             int zwei = 0;
@@ -283,24 +265,26 @@ public class Uebungsblatt2 {
             int neun = 0;
             int zehn = 0;
 
-            for (int i = 0; i < nn.length; i++) {
+            do {numbers = scanner.nextInt();
+              if (i < numbers) {
 
-//                 switch (Integer.valueOf(nn)) {
-//                    case 1: eins++;break;
-//                    case 2: zwei++;break;
-//                    case 3: drei++;break;
-//                    case 4: vier++;break;
-//                    case 5: fuenf++;break;
-//                    case 6: sechs++;break;
-//                    case 7: sieben++;break;
-//                    case 8: acht++;break;
-//                    case 9: neun++;break;
-//                    case 10: zehn++;break;
-//
-//                    default:
-//                        System.out.println("Keine gültige Aufgabe!");
-//                }
+                 switch (numbers) {
+                    case 1: eins++;break;
+                    case 2: zwei++;break;
+                    case 3: drei++;break;
+                    case 4: vier++;break;
+                    case 5: fuenf++;break;
+                    case 6: sechs++;break;
+                    case 7: sieben++;break;
+                    case 8: acht++;break;
+                    case 9: neun++;break;
+                    case 10: zehn++;break;
+                    default:
+                        System.out.println("Keine gültige Aufgabe!");
+                }
             }
+            }while( numbers != 0 );
+
 
             System.out.println("1: " + eins);
             System.out.println("2: " + zwei);
@@ -320,10 +304,15 @@ public class Uebungsblatt2 {
 
 
             Scanner scanner = new Scanner(System.in);
-            Integer a = scanner.nextInt();
+            ArrayList<Integer> list = new ArrayList<Integer>();
+            System.out.println("Enter numbers");
+            System.out.println("(Click , or . to terminate)");
 
+            while(scanner.hasNextInt()){
+                list.add(scanner.nextInt());
+            }
 
-
+            System.out.println(list);
         }
 
         private static void aufgabeVierzehn() {
@@ -345,12 +334,17 @@ public class Uebungsblatt2 {
             System.out.println("Aufgabe Fuenfzehn ausgewählt.");
 
 
-//            boolean[] arrList1 = new boolean[]{true, true, true};
-//            boolean[] arrList2 = new boolean[]{false, false, true};
+            boolean[] array1 = {true,true,true};
+            boolean[] array2 = {false,false,true};
+            int hamming = 0;
 
 
-
-
+            for (int a = 0; a<array1.length; a++) {
+                if (array1[a] != array2[a]) {
+                    hamming++;
+                }
+            }
+            System.out.println(hamming);
         }
 
         private static void aufgabeSechszehn() {
@@ -370,8 +364,9 @@ public class Uebungsblatt2 {
         private static void aufgabeSiebzehn() {
             System.out.println("Aufgabe Siebzehn ausgewählt.");
 
+            String original;
+            String reverse = "";
 
-            String original, reverse = "";
             Scanner scanner = new Scanner(System.in);
 
             System.out.println("Enter your word:");
@@ -387,26 +382,7 @@ public class Uebungsblatt2 {
             else
                 System.out.println("Not Palindrome");
 
-
-//            char[] testArray = {'R','E','I','T','T','I','E','R'};
-//            boolean isPalindrome = true;
-//
-//            int i = testArray.length -1, j = 0;
-//            char[] letter = new char[testArray.length];
-//            while(i >= 0){
-//                letter[j] = testArray[i];
-//                j++;
-//                i++;
-//                letter = letter + testArray(i);
-//            }
-//
-//            if (testArray.equals(letter))
-//            {
-//                System.out.println("Die gegebene Zeichenkette ist ein Palindrom.");
-//            }else
-//                System.out.println("Die gegebene Zeichenkette ist kein Palindrom.");
-
-        }
+            }
 
         private static void aufgabeAchtzehn() {
         System.out.println("Aufgabe SiebAchtzehn ausgewählt.");
@@ -419,27 +395,15 @@ public class Uebungsblatt2 {
             int key = 3;
             for( int i = 0; i < caesar.length(); ++i )
             {
-                char curChar = caesar.charAt( i );
+                char curChar = caesar.charAt(i);
                 if( curChar >= 'a' && curChar <= 'w')
-                    code += (char) (( curChar - 26 + key ) + 26 );
+                    code += (char) ( curChar + key);
                 else if ( curChar >='x' && curChar <= 'z')
                     code += (char) ( curChar - 26 + key);
                 else
                     code += curChar;
             }
-
             System.out.println(code);
-
-
-
-
-
     }
 
-
-
-
-
-    }
-
-
+}
